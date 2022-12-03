@@ -27,7 +27,7 @@ app.get('/',(req,res)=>{
 })
 app.use('/posts',postRoutes)
 app.use('/user',userRoutes)
-// const CONNECTION_URL = 'mongodb+srv://Tharindu:bnkgbbeJhJjjaKcs@cluster0.xaogsmw.mongodb.net/?retryWrites=true&w=majority'
+// const CONNECTION_URL = 'your mongo URI'
 const PORT = process.env.PORT || 5000;
 
 mongoose.connect( process.env.CONNECTION_URL)
